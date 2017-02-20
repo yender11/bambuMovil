@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvNotificaciones"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="140dp"
+            android:layout_height="62dp"
+            tools:layout_width="wrap_content"
+            tools:orientation="vertical">
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/favicon1"
+                android:id="@+id/imageViewTipoNotificacion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTituloNotificacion"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Titulo de la notificacion"
+                android:textStyle="normal|bold"
+                android:textSize="15sp"
+                android:layout_margin="3dp"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1.24" />
+
+            <TextView
+                android:id="@+id/textViewDescripcionNotificacion"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                android:text="Texto de la notificacion"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:textSize="12sp"
+                android:layout_height="24dp"
+                android:layout_weight="1.24" />
+
+            <TextView
+                android:text="01/01/2017"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewFechaNotificacion"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="normal|bold|italic"
+                android:layout_weight="1.24"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.24"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical">
+
+            <Button
+            android:layout_height="33dp"
+            android:id="@+id/button"
+            android:text="Ver"
+            android:clickable="false"
+            android:background="@color/colorPrimary"
+            android:layout_width="76dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

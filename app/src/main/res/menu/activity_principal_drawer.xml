@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Agenda">
+        <menu>
+            <item
+                android:id="@+id/nav_mis_citas"
+                android:icon="@drawable/ic_line_weight_black_36dp"
+                android:title="Mis Citas" />
+            <item
+                android:id="@+id/nav_cancelar_cita"
+                android:icon="@drawable/ic_highlight_off_black_36dp"
+                android:title="Cancelar Cita" />
+        </menu>
+    </item>
+
+    <item android:title="Servicios">
+        <menu>
+            <item android:id="@+id/nav_mis_avances"
+                android:icon="@drawable/ic_trending_up_black_36dp"
+                android:title="Mis Avances" />
+        </menu>
+    </item>
+
+    <item android:title="Noticias">
+    <menu>
+        <item
+            android:id="@+id/nav_notificaciones"
+            android:icon="@drawable/ic_add_alert_black_18dp"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/ic_chrome_reader_mode_black_36dp"
+            android:title="Noticias" />
+
+    </menu>
+</item>
+
+    <item android:title="Contactanos">
+        <menu>
+            <item
+                android:id="@+id/nav_sugerencia"
+                android:icon="@drawable/ic_new_releases_black_36dp"
+                android:title="Sugerencias" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:icon="@drawable/ic_settings_power_black_36dp"
+        android:title="Cerrar Sesion" />
+
+</menu>
