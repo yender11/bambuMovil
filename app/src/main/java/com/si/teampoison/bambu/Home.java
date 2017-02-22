@@ -11,8 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
-import com.si.teampoison.bambu.adaptador.RecyclerViewAdapterNoticias;
+import com.si.teampoison.bambu.adaptador.RecyclerViewAdapterNotificaciones;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,16 +31,21 @@ public class Home extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //FULL SCREEN
+     //   requestWindowFeature(Window.FEATURE_NO_TITLE);
+    //    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+      //                       WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         //llenado las noticias-----------------------
 
         //setContentView(R.layout.activity_notificaciones);
-        recyclerView = (RecyclerView) findViewById(R.id.listaNoticias);
+        recyclerView = (RecyclerView) findViewById(R.id.listaNotificaciones);
         List<String> titulos = new ArrayList<>();
-        titulos.add(0,"Noticia 1");
-        titulos.add(1,"Noticia 2 ");
-        titulos.add(2,"Noticia");
+        titulos.add(0,"Promocion de masajes faciales");
+        titulos.add(1,"Nuevos Paquetes");
+        titulos.add(2,"Conoces nuetros servicios");
 
-        RecyclerViewAdapterNoticias adaptador=new RecyclerViewAdapterNoticias(titulos);
+        RecyclerViewAdapterNotificaciones adaptador=new RecyclerViewAdapterNotificaciones(titulos);
         manager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adaptador);

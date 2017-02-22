@@ -34,14 +34,10 @@
     </menu>
 </item>
 
-    <item android:title="Contactanos">
-        <menu>
-            <item
-                android:id="@+id/nav_sugerencia"
-                android:icon="@drawable/ic_new_releases_black_36dp"
-                android:title="Sugerencias" />
-        </menu>
-    </item>
+    <item
+        android:id="@+id/nav_contactanos"
+        android:icon="@drawable/ic_new_releases_black_36dp"
+        android:title="Contactanos" />
 
 
     <item
