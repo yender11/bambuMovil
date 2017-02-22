@@ -86,8 +86,6 @@ public class Principal extends AppCompatActivity
         if (id == R.id.nav_mis_citas) {
             Intent i = new Intent(this,Citas.class);
             startActivity(i);
-        } else if (id == R.id.nav_cancelar_cita) {
-
         } else if (id == R.id.nav_mis_avances) {
 
         } else if (id == R.id.nav_sugerencia) {
@@ -103,7 +101,6 @@ public class Principal extends AppCompatActivity
             startActivity(i);
 
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
