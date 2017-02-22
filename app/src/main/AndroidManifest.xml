@@ -51,6 +51,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.si.teampoison.bambu.Principal" />
         </activity>
+
+        <activity android:name=".Contacto"
+            android:label="Contacto"
+            android:parentActivityName=".Principal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.si.teampoison.bambu.Principal" />
+        </activity>
+
+
         <activity
             android:name=".cita_detalle"
             android:label="@string/title_activity_cita_detalle"
