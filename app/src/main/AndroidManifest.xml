@@ -42,7 +42,7 @@
         <activity
             android:name=".Principal"
             android:label="@string/title_activity_principal"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Citas"
             android:label="@string/title_activity_citas"
@@ -51,6 +51,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.si.teampoison.bambu.Principal" />
         </activity>
+        <activity
+            android:name=".cita_detalle"
+            android:label="@string/title_activity_cita_detalle"
+            android:parentActivityName=".Citas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.si.teampoison.bambu.Citas" />
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

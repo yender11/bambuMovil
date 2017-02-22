@@ -1,11 +1,17 @@
 package com.si.teampoison.bambu.adaptador;
 
 
+import android.content.Intent;
+import android.widget.AdapterView;
 import android.widget.TextView;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import com.si.teampoison.bambu.R;
+import com.si.teampoison.bambu.cita_detalle;
+
+import static android.support.v4.app.ActivityCompat.startActivity;
+import static com.si.teampoison.bambu.R.layout.activity_citas;
 
 
 /**
@@ -26,6 +32,4 @@ public class ViewHolderCitas extends RecyclerView.ViewHolder{
         hora = (TextView) itemView.findViewById(R.id.textViewHoraCita);
 
     }
-
-
-}
+    }
