@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 
+
 /**
  * Created by alejandra on 21/02/17.
  */
@@ -28,7 +29,8 @@ public class DialogoCerrarSesion extends DialogFragment {
         builder_dialogo.setNeutralButton("Si", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
+                System.runFinalization();
+                System.exit(0);
             }
         });
 
