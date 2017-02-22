@@ -153,21 +153,29 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp">
+        android:layout_marginTop="50dp"
+        android:gravity="center">
 
         <Button
-            android:text="Button"
+            android:text="confirmar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button4"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:visibility="visible"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary" />
 
         <Button
-            android:text="Button"
+            android:text="Cancelar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button5"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:background="@color/colorButtonCancelar" />
     </LinearLayout>
 
 </LinearLayout>
