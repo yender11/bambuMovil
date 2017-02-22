@@ -9,10 +9,6 @@
                 android:id="@+id/nav_mis_citas"
                 android:icon="@drawable/ic_line_weight_black_36dp"
                 android:title="Mis Citas" />
-            <item
-                android:id="@+id/nav_cancelar_cita"
-                android:icon="@drawable/ic_highlight_off_black_36dp"
-                android:title="Cancelar Cita" />
         </menu>
     </item>
 
