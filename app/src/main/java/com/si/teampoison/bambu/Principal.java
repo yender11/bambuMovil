@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.DialogFragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -85,13 +86,13 @@ public class Principal extends AppCompatActivity
         if (id == R.id.nav_mis_citas) {
             Intent i = new Intent(this,Citas.class);
             startActivity(i);
-        } else if (id == R.id.nav_cancelar_cita) {
-
         } else if (id == R.id.nav_mis_avances) {
 
         } else if (id == R.id.nav_sugerencia) {
 
         } else if (id == R.id.nav_cerrar_sesion) {
+            DialogoCerrarSesion d= new DialogoCerrarSesion();
+            d.show(getSupportFragmentManager(), "etiqueta");
         }
             else if (id== R.id.nav_noticias) {
         }
@@ -100,7 +101,6 @@ public class Principal extends AppCompatActivity
             startActivity(i);
 
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
