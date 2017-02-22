@@ -72,21 +72,8 @@
                        android:background="@color/colorPrimary"
                        android:onClick="onClick (Login)"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"/>
 
-
-<<<<<<< HEAD
-=======
-                <Button
-                   android:text="Limpiar"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/buttonLimpiar"
-                   android:layout_marginTop="50dp"
-                   android:layout_width="160dp"
-                   android:textColor="@android:color/background_light"
-                    android:background="@color/colorPrimary"
-                    android:layout_gravity="center_horizontal" />
->>>>>>> ramaYender
                 </LinearLayout>
 
 
