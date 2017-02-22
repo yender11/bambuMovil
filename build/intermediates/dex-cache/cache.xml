@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/yender/.gradle/caches/modules-2/files-2.1/org.springframework.android/spring-android-rest-template/1.0.1.RELEASE/e132d929bd181941f79b0d63edafb8a86ae6fd33/spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/spring-android-rest-template-1.0.1.RELEASE_30842ea0cb9cf6b25760f3c9d004638d1ed2bb8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/yender/.gradle/caches/modules-2/files-2.1/org.springframework.android/spring-android-core/1.0.1.RELEASE/e68f0e8e4b636ee30c4de58953be38d9b72a5e3b/spring-android-core-1.0.1.RELEASE.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e68f0e8e4b636ee30c4de58953be38d9b72a5e3b">
+        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/spring-android-core-1.0.1.RELEASE_3f1774bbfc92636f80b8d2e5556e0aa1a889f1dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,12 +138,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/yender/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.3.2/c75edc740a6d8cb1cef6fa82fa594e0bce561916/jackson-databind-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c75edc740a6d8cb1cef6fa82fa594e0bce561916">
+        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/jackson-databind-2.3.2_1377f840c92865bcd53a94c328d9f5c45a642810.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yender/Git/bambuMovil/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="e109e4ffa3644a5433c6411c3d3fe194b81e3c48">
+        sha1="c235d679abb1460abfe1938ab572f93059b91eef">
         <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_247a252b4ceb715fa91e9c558734087a718148c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yender/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.3.0/f5e853a20b60758922453d56f9ae1e64af5cb3da/jackson-annotations-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f5e853a20b60758922453d56f9ae1e64af5cb3da">
+        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.3.0_c6dd9174ed4f2cbfb2a5e7b81b883a175ec14ef9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -135,6 +171,15 @@
         revision="23.0.3"
         sha1="19b46c60011c373716325bde9220398eef962b6d">
         <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/instant-run_c60c07c9ceb82a46db7040a9b6ec5ddaaa37efa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/yender/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.3.2/559b70ac8a0d5cad611da4223137a920147201ba/jackson-core-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="559b70ac8a0d5cad611da4223137a920147201ba">
+        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/jackson-core-2.3.2_e5f34101589523cdc0292968f4aa3b80a7eb60d8.jar" />
     </item>
     <item
         is-multidex="false"

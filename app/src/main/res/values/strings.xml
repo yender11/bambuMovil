@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name"> Bambu</string>
+    <string name="app_name">Bambu</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Strings relacianado a una prueba pra consumir servicio -->
+        <string name="id_label">El ID es</string>
+        <string name="id_value">[id]</string>
+        <string name="content_label">El contnido es </string>
+        <string name="content_value">[content]</string>
+        <string name="action_refresh">Refresh</string>
+
+
     <string name="title_activity_login">Iniciar Sesion</string>
     <string name="title_activity_home">  </string>
     <string name="title_activity_notificaciones">Notificaciones</string>

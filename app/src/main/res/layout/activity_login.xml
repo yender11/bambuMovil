@@ -80,7 +80,47 @@
                 </LinearLayout>
 
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65">
 
+                <TextView
+                    android:id="@+id/id_label"
+                    android:text="@string/id_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/id_value"
+                    android:text="@string/id_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/id_label"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/content_label"
+                    android:text="@string/content_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_label"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/content_value"
+                    android:text="@string/content_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/content_label"
+                    android:layout_alignLeft="@+id/id_value"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
