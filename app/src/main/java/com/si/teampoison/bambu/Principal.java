@@ -14,9 +14,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RadioButton;
 
 public class Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    RadioButton rb_sugerencia, rb_reclamo, rb_informacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +28,9 @@ public class Principal extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        rb_sugerencia= (RadioButton) findViewById(R.id.id_sugerencia);
+        rb_reclamo = (RadioButton) findViewById(R.id.id_reclamo);
+        rb_informacion= (RadioButton) findViewById(R.id.id_informacion);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -87,10 +92,15 @@ public class Principal extends AppCompatActivity
             Intent i = new Intent(this,Citas.class);
             startActivity(i);
         } else if (id == R.id.nav_mis_avances) {
+        }
 
-        } else if (id == R.id.nav_sugerencia) {
+        else if (id == R.id.nav_contactanos) {
+            //DIALOGO TIPO DE CONTACTANOS
+            DialogoContactanos dialog = new DialogoContactanos();
+            dialog.show(getSupportFragmentManager(), "etiqueta");
 
-        } else if (id == R.id.nav_cerrar_sesion) {
+        }
+        else if (id == R.id.nav_cerrar_sesion) {
             DialogoCerrarSesion d= new DialogoCerrarSesion();
             d.show(getSupportFragmentManager(), "etiqueta");
         }

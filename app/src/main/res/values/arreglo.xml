@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_referencia">
+        <item> Seleccione </item>
+        <item> Servicio </item>
+        <item> Esteticista </item>
+        <item> Cubiculo </item>
+    </string-array>
+
+    <string-array name="array_esteticista">
+        <item> Seleccione </item>
+        <item> Luisa Hernandez </item>
+        <item> Andres Teran </item>
+        <item> Maria Alvarez </item>
+    </string-array>
+
+    <string-array name="array_servicio">
+        <item> Seleccione </item>
+        <item> Limpieza Facial </item>
+        <item> Depilación </item>
+        <item> Cavitación </item>
+    </string-array>
+
+    <string-array name="array_cubiculo">
+        <item> Seleccione </item>
+        <item> C-04 </item>
+        <item> L-01 </item>
+        <item> D-03 </item>
+    </string-array>
+
+
+
+</resources>
