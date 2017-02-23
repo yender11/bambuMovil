@@ -6,13 +6,11 @@ import com.j256.ormlite.table.DatabaseTable;
 /**
  * Created by yender on 18/02/17.
  */
-@DatabaseTable(tableName = "usuario")
+@DatabaseTable(tableName = "tb_usuario")
 public class Usuario {
 
-    @DatabaseField(id = true)
-    private Long id;
 
-    @DatabaseField
+    @DatabaseField(id = true)
     private String usuario;
 
     @DatabaseField
@@ -21,15 +19,11 @@ public class Usuario {
     @DatabaseField( foreign = true, foreignAutoCreate = true, foreignAutoRefresh = true)
     private Rol rol;
 
+    @DatabaseField
+    private String status;
+
+
     public Usuario() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getUsuario() {
@@ -54,5 +48,13 @@ public class Usuario {
 
     public void setRol(Rol rol) {
         this.rol = rol;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
