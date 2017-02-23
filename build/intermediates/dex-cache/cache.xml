@@ -48,15 +48,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_226017a84f424fac567d246cd81503264e9e2c06.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/yender/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.3.2/c75edc740a6d8cb1cef6fa82fa594e0bce561916/jackson-databind-2.3.2.jar"
         jumboMode="true"
         optimize="true"
@@ -70,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c6b4c8e4c3df57ab9ab6c815691ebe24af1ea96e">
+        sha1="fb014b8e6e3cac581f6e06581ecf53acfeeec0ab">
         <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_247a252b4ceb715fa91e9c558734087a718148c6.jar" />
     </item>
     <item
@@ -88,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c4f2229dd16512e7440b896717893c0d84058d24">
+        sha1="bf48153b7639d0abd20253a22489637061d2cbbb">
         <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/instant-run_c60c07c9ceb82a46db7040a9b6ec5ddaaa37efa0.jar" />
     </item>
     <item
@@ -102,30 +93,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_38d2acb7deb2fed651461ec87d63dd5fa1711616.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
         <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_30528c3e1d030d08bd3dba3f7f9222b36427f4c2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/yender/Git/bambuMovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/home/yender/Git/bambuMovil/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_01a0a09ad07fe6ca21ef19384a73b1cca9ac488d.jar" />
     </item>
     <item
         is-multidex="false"
