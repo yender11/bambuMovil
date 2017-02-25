@@ -59,10 +59,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.si.teampoison.bambu.Principal" />
         </activity>
-
         <activity android:name=".DialogoCerrarSesion" />
-
-
         <activity
             android:name=".DetallePaquete"
             android:label="@string/title_activity_detalle_paquete"
@@ -72,7 +69,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.si.teampoison.bambu.Paquetes" />
         </activity>
-
+        <activity
+            android:name=".Calificacion"
+            android:label="@string/title_activity_calificacion"
+            android:parentActivityName=".Principal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.si.teampoison.bambu.Principal" />
+        </activity>
     </application>
 
 </manifest>

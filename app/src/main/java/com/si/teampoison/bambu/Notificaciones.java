@@ -10,7 +10,7 @@ import android.view.View;
 import com.si.teampoison.bambu.adaptador.RecyclerViewAdapterNotificaciones;
 import java.util.ArrayList;
 import java.util.List;
-public class Notificaciones extends AppCompatActivity {
+public class Notificaciones extends AppCompatActivity implements View.OnClickListener{
 
     private RecyclerView.LayoutManager manager;
     private RecyclerView recyclerView;
@@ -34,6 +34,11 @@ public class Notificaciones extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
 
+        Intent i = new Intent(this, Calificacion.class);
+        startActivity(i);
 
+    }
 }

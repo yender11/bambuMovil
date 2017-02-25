@@ -99,6 +99,9 @@ public class Principal extends AppCompatActivity
 
         if (id == R.id.nav_mis_citas) {
             // Handle the camera action
+
+            Intent i = new Intent(this, Calificacion.class);
+            startActivity(i);
         } else if (id == R.id.nav_mis_avances) {
             Intent i = new Intent(this,Paquetes.class);
             startActivity(i);
