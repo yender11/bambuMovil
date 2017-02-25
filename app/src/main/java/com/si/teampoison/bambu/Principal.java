@@ -100,6 +100,8 @@ public class Principal extends AppCompatActivity
         if (id == R.id.nav_mis_citas) {
             // Handle the camera action
         } else if (id == R.id.nav_mis_avances) {
+            Intent i = new Intent(this,Paquetes.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_contactanos) {
             //DIALOGO TIPO DE CONTACTANOS
@@ -109,8 +111,6 @@ public class Principal extends AppCompatActivity
         } else if (id == R.id.nav_cerrar_sesion) {
             DialogoCerrarSesion d= new DialogoCerrarSesion();
             d.show(getSupportFragmentManager(), "etiqueta");
-        }
-            else if (id== R.id.nav_noticias) {
         }
         else if (id== R.id.nav_notificaciones) {
             Intent i = new Intent(this,Notificaciones.class);

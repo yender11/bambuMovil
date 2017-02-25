@@ -29,6 +29,47 @@
         <item> D-03 </item>
     </string-array>
 
+    <string-array name="array_avance">
 
+        <item>Sesion</item>
+        <item>Fecha</item>
+        <item>Actual</item>
+
+        <item>01</item>
+        <item>09-01-17</item>
+        <item>80</item>
+
+        <item>02</item>
+        <item>15-01-17</item>
+        <item>79</item>
+
+        <item>03</item>
+        <item>23-01-17</item>
+        <item>83</item>
+
+        <item>04</item>
+        <item>03-02-17</item>
+        <item>83</item>
+
+        <item>06</item>
+        <item>13-02-17</item>
+        <item>83</item>
+
+        <item>07</item>
+        <item>23-02-17</item>
+        <item>83</item>
+
+        <item>08</item>
+        <item>03-03-17</item>
+        <item>78</item>
+
+    </string-array>
+
+    <string-array name="array_indicadores">
+        <item>Seleccione</item>
+        <item>Peso</item>
+        <item>% Grasa</item>
+        <item>Masa Muscular</item>
+    </string-array>
 
 </resources>

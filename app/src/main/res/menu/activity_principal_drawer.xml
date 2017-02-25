@@ -26,10 +26,7 @@
             android:id="@+id/nav_notificaciones"
             android:icon="@drawable/ic_add_alert_black_18dp"
             android:title="Notificaciones" />
-        <item
-            android:id="@+id/nav_noticias"
-            android:icon="@drawable/ic_chrome_reader_mode_black_36dp"
-            android:title="Noticias" />
+
 
     </menu>
 </item>

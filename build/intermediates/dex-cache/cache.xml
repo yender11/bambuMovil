@@ -40,15 +40,6 @@
     <item
         is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_8878c42488a5f2b7e986b122feb2e27edfd66fb0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
@@ -57,12 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_61169e35d9d18ea5f415c8a7f33d8f136b1cf670.jar" />
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_8878c42488a5f2b7e986b122feb2e27edfd66fb0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -72,6 +63,15 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_9bdbbd1ad380bae0b23d69ad37371c0487349bf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_61169e35d9d18ea5f415c8a7f33d8f136b1cf670.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,21 +147,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_2273917857efe0aba100f9440750d652351c1285.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/alejandra/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_b06601ade576f7aea253d1538b4c4c1c5de5e314.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_2273917857efe0aba100f9440750d652351c1285.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,15 +192,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_84b10608b6ad529a7f7b9c807c6c0a70fdaffe1a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -210,21 +201,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_84b10608b6ad529a7f7b9c807c6c0a70fdaffe1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d38084015027549951cbaea5d5f6fb795cc81151">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_ec7b6f7ab4a474ea79a94ed99cdf729df5ea99e7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d4962311fe7ef24fdcbca01df35f6a936755e9b3">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ca66dc54472c9379838a6d935aba33a6925c3354.jar" />
     </item>
     <item
         is-multidex="false"
@@ -261,15 +252,6 @@
         revision="25.0.2"
         sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.2.1_6ec15ad6159720425e9c8cf5e0a40ffa8f7a1d5d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f40907891974ca30229a6bcc8ad39a8c7b867004">
-        <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/instant-run_44a5c300546374b5f1092d4472e7bda3e85a9630.jar" />
     </item>
 
 </items>

@@ -26,7 +26,6 @@
             android:layout_height="73dp"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:logo="@drawable/logofooter"
             app:title="          " />
 
     </android.support.design.widget.AppBarLayout>
