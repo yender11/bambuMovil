@@ -56,6 +56,7 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
                 final String url = "http://rest-service.guides.spring.io/greeting";
                 RestTemplate restTemplate = new RestTemplate();
                 restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+
                 Prueba prueba = restTemplate.getForObject(url, Prueba.class);
                 return prueba;
 

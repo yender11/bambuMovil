@@ -1,20 +1,29 @@
 package com.si.teampoison.bambu;
 
 import android.content.Intent;
+import android.database.SQLException;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.si.teampoison.bambu.adaptador.RecyclerViewAdapterNoticias;
+import com.si.teampoison.bambu.sql.dao.NoticiaDAO;
+import com.si.teampoison.bambu.sql.modelo.Noticia;
+import com.si.teampoison.bambu.sql.modelo.Prueba;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -23,27 +32,60 @@ public class Home extends AppCompatActivity {
     private RecyclerView.LayoutManager manager;
     private RecyclerView recyclerView;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //llenado las noticias-----------------------
 
-        //setContentView(R.layout.activity_notificaciones);
+        List<Noticia> noticias = new ArrayList<>();
+
+       ////llenado las noticias-----------------------
+        NoticiaDAO noticiaDao = new NoticiaDAO();
+        try {
+            noticias.addAll(noticiaDao.buscarNoticias());
+
+            } catch (java.sql.SQLException e) {
+            e.printStackTrace();
+        }
+
         recyclerView = (RecyclerView) findViewById(R.id.listaNoticias);
-        List<String> titulos = new ArrayList<>();
-        titulos.add(0,"Noticia 1");
-        titulos.add(1,"Noticia 2 ");
-        titulos.add(2,"Noticia");
-
-        RecyclerViewAdapterNoticias adaptador=new RecyclerViewAdapterNoticias(titulos);
+        RecyclerViewAdapterNoticias adaptador=new RecyclerViewAdapterNoticias(noticias);
         manager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adaptador);
-// hasta aqui
+
     }
+
+    private class HttpRequestTask extends AsyncTask<Void, Void, Noticia> {
+        @Override
+        protected Noticia doInBackground(Void... params) {
+            try {
+                final String url = "http://rest-service.guides.spring.io/greeting";
+                RestTemplate restTemplate = new RestTemplate();
+                restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+
+                Prueba prueba = restTemplate.getForObject(url, Prueba.class);
+                return prueba;
+
+            } catch (Exception e) {
+                Log.e("Principal", e.getMessage(), e);
+            }
+
+            return null;
+        }
+        @Override
+        protected void onPostExecute(Prueba prueba) {
+            TextView pruebaIdText = (TextView) findViewById(R.id.id_value);
+            TextView pruebaContentText = (TextView) findViewById(R.id.content_value);
+            pruebaIdText.setText(prueba.getId());
+            pruebaContentText.setText(prueba.getContent());
+        }
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
