@@ -32,7 +32,6 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     private Dao<Rol,Integer> rolIntegerDao;
     private Dao<Usuario, Integer> usuarioIntegerDao;
     private Dao<Noticia, Integer> noticiaIntegerDao;
-    private Dao<Noticia, Integer> noticiaDao;
 
     public DBHelper(Context context) {
          super(context, NOMBRE_BASE_DE_DATOS, null, VERSION_BASE_DE_DATOS);
@@ -83,26 +82,12 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     }
 
      public Dao<Noticia, Integer> getNoticiaIntegerDao()throws SQLException {
-        if(noticiaIntegerDao==null){
+
             noticiaIntegerDao= getDao(Noticia.class);
-        }
+
         return noticiaIntegerDao;
     }
 
-    public static <Noticia> List<Noticia> getListadoNoticia(Dao<Noticia, Integer> dao) throws SQLException {
-        ArrayList<Noticia> list = new ArrayList<>();
-        CloseableIterator<Noticia> iterator = dao.closeableIterator();
-        try {
-            while (iterator.hasNext()){
-                Noticia item = iterator.next();
-                list.add(item);
-            }
-        } finally {
-            iterator.close();
-        }
-
-        return list;
-    }
 
     @Override
     public void close(){

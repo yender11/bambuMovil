@@ -1,26 +1,19 @@
 package com.si.teampoison.bambu;
 
 import android.content.Intent;
-import android.database.SQLException;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import com.si.teampoison.bambu.servicio.HttpRequestNoticias;
 
 import com.si.teampoison.bambu.adaptador.RecyclerViewAdapterNoticias;
 import com.si.teampoison.bambu.sql.dao.NoticiaDAO;
 import com.si.teampoison.bambu.sql.modelo.Noticia;
-import com.si.teampoison.bambu.sql.modelo.Prueba;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 
@@ -31,18 +24,18 @@ public class Home extends AppCompatActivity {
 
     private RecyclerView.LayoutManager manager;
     private RecyclerView recyclerView;
-    @Override
 
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         List<Noticia> noticias = new ArrayList<>();
 
-       ////llenado las noticias-----------------------
+      ////llenado las noticias-----------------------
         NoticiaDAO noticiaDao = new NoticiaDAO();
         try {
             noticias.addAll(noticiaDao.buscarNoticias());
@@ -59,32 +52,15 @@ public class Home extends AppCompatActivity {
 
     }
 
-    private class HttpRequestTask extends AsyncTask<Void, Void, Noticia> {
-        @Override
-        protected Noticia doInBackground(Void... params) {
-            try {
-                final String url = "http://rest-service.guides.spring.io/greeting";
-                RestTemplate restTemplate = new RestTemplate();
-                restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+    @Override
+    protected void onStart() {
+        super.onStart();
+        new HttpRequestNoticias().execute();
 
-                Prueba prueba = restTemplate.getForObject(url, Prueba.class);
-                return prueba;
+      }
 
-            } catch (Exception e) {
-                Log.e("Principal", e.getMessage(), e);
-            }
 
-            return null;
-        }
-        @Override
-        protected void onPostExecute(Prueba prueba) {
-            TextView pruebaIdText = (TextView) findViewById(R.id.id_value);
-            TextView pruebaContentText = (TextView) findViewById(R.id.content_value);
-            pruebaIdText.setText(prueba.getId());
-            pruebaContentText.setText(prueba.getContent());
-        }
 
-    }
 
 
     @Override

@@ -12,7 +12,7 @@ import java.util.Date;
 @DatabaseTable(tableName = "tb_noticia")
 public class Noticia {
 
-    @DatabaseField(id = true)
+    @DatabaseField(id = true, allowGeneratedIdInsert = true)
     private String codigo;
 
     @DatabaseField

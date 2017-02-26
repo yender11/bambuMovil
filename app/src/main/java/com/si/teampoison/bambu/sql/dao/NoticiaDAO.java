@@ -24,7 +24,7 @@ public class NoticiaDAO  {
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
         try {
             dao = dbHelper.getHelper().getNoticiaIntegerDao();
-            dao.create(noticia);
+            dao.createOrUpdate(noticia);
         } catch (SQLException e) {
             throw new NoticiaSQLExcepcion("Hubo un error al insertar la noticia");
         }
@@ -42,6 +42,7 @@ public class NoticiaDAO  {
         }
         return noticia;
     }
+
 
     public List<Noticia> buscarNoticias() throws SQLException {
         Dao dao = null;
