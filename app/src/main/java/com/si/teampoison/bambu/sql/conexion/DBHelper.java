@@ -2,11 +2,11 @@ package com.si.teampoison.bambu.sql.conexion;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-
+import android.app.Application;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
-import com.j256.ormlite.dao.CloseableIterator;
 import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 import com.si.teampoison.bambu.base.ProveedorDeContexto;
@@ -15,8 +15,7 @@ import com.si.teampoison.bambu.sql.modelo.Rol;
 import com.si.teampoison.bambu.sql.modelo.Usuario;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created by yender on 18/02/17.
@@ -26,12 +25,13 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String NOMBRE_BASE_DE_DATOS= "bambu.sqlite";
     private static final Integer VERSION_BASE_DE_DATOS= 1;
-    private static DBHelper dbHelper;
+    private static DBHelper mDBHelper;
 
     //Aqui van los atributos relacionados a las tablas de base de datos que se desean gestionar
     private Dao<Rol,Integer> rolIntegerDao;
     private Dao<Usuario, Integer> usuarioIntegerDao;
-    private Dao<Noticia, Integer> noticiaIntegerDao;
+    private Dao<Noticia, String> noticiaStringDao;
+    private RuntimeExceptionDao<Noticia, String> prueba = null;
 
     public DBHelper(Context context) {
          super(context, NOMBRE_BASE_DE_DATOS, null, VERSION_BASE_DE_DATOS);
@@ -67,27 +67,33 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
         return usuarioIntegerDao;
     }
 
-    public DBHelper getHelper(){
-        if(dbHelper==null){
-            dbHelper= OpenHelperManager.getHelper(ProveedorDeContexto.getContext(), DBHelper.class);
+    public DBHelper getHelper(Context context)  {
+        if (mDBHelper == null) {
+            mDBHelper = OpenHelperManager.getHelper(context, DBHelper.class);
         }
-        return dbHelper;
+        return mDBHelper;
     }
 
-    public void closeHelper(){
-        if (dbHelper!=null){
+    public void closeHelper() {
+        if (mDBHelper != null) {
             OpenHelperManager.releaseHelper();
-            dbHelper=null;
+            mDBHelper = null;
         }
     }
 
-     public Dao<Noticia, Integer> getNoticiaIntegerDao()throws SQLException {
+     public Dao<Noticia, String> getNoticiaStringDao()throws SQLException {
 
-            noticiaIntegerDao= getDao(Noticia.class);
+            noticiaStringDao= getDao(Noticia.class);
 
-        return noticiaIntegerDao;
+        return noticiaStringDao;
     }
 
+    public RuntimeExceptionDao<Noticia, String> getRuntimeExceptionDao(){
+        if(prueba==null){
+            prueba = getRuntimeExceptionDao(Noticia.class);
+        }
+        return prueba;
+    }
 
     @Override
     public void close(){

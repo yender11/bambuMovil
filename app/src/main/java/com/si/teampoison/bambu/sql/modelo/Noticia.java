@@ -12,7 +12,7 @@ import java.util.Date;
 @DatabaseTable(tableName = "tb_noticia")
 public class Noticia {
 
-    @DatabaseField(id = true, allowGeneratedIdInsert = true)
+    @DatabaseField(id = true)
     private String codigo;
 
     @DatabaseField
@@ -27,10 +27,19 @@ public class Noticia {
     @DatabaseField
     private String codigo_sistema;
     @DatabaseField
-    private Date fecha;
+    private String fecha;
 
 
     public Noticia() {
+    }
+
+    public Noticia(String codigo, String descripcion, String status, String imagen, String codigo_sistema, String fecha) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.status = status;
+        this.imagen = imagen;
+        this.codigo_sistema = codigo_sistema;
+        this.fecha = fecha;
     }
 
     public String getCodigo() {
@@ -73,11 +82,12 @@ public class Noticia {
         this.codigo_sistema = codigo_sistema;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 }
+

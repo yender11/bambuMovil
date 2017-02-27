@@ -19,11 +19,11 @@ import java.util.List;
 
 public class NoticiaDAO  {
 
-    public void insertar(Noticia noticia) throws NoticiaSQLExcepcion {
+   /* public void insertar(Noticia noticia, ) throws NoticiaSQLExcepcion {
         Dao dao= null;
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
         try {
-            dao = dbHelper.getHelper().getNoticiaIntegerDao();
+            dao = dbHelper.getHelper().getNoticiaStringDao();
             dao.createOrUpdate(noticia);
         } catch (SQLException e) {
             throw new NoticiaSQLExcepcion("Hubo un error al insertar la noticia");
@@ -35,7 +35,7 @@ public class NoticiaDAO  {
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
         Noticia noticia= null;
         try {
-            dao = dbHelper.getHelper().getNoticiaIntegerDao();
+            dao = dbHelper.getHelper().getNoticiaStringDao();
             noticia= (Noticia)dao.queryBuilder().where().eq("id", id).query();
         } catch (SQLException e) {
             throw new NoticiaSQLExcepcion("Hubo un error al buscar la noticia");
@@ -47,7 +47,7 @@ public class NoticiaDAO  {
     public List<Noticia> buscarNoticias() throws SQLException {
         Dao dao = null;
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
-        dao = dbHelper.getNoticiaIntegerDao();
+        dao = dbHelper.getNoticiaStringDao();
         QueryBuilder queryBuilder = dao.queryBuilder();
         if(queryBuilder.query()!=null){
             return (List<Noticia>) queryBuilder.query();
@@ -56,7 +56,7 @@ public class NoticiaDAO  {
             return noticias;
         }
 
-    }
+    }*/
 
     }
 

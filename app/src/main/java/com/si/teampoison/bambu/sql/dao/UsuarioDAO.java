@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 public class UsuarioDAO {
 
-    public void insertar(Usuario usuario) throws UsuarioSQLExcepcion{
+   /* public void insertar(Usuario usuario) throws UsuarioSQLExcepcion{
         Dao dao= null;
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
         try {
@@ -23,9 +23,9 @@ public class UsuarioDAO {
         } catch (SQLException e) {
             throw new UsuarioSQLExcepcion("Hubo un error al insertar el usuario");
         }
-    }
+    }*/
 
-    public Usuario consultarPorId(Long id) throws UsuarioSQLExcepcion{
+    /*public Usuario consultarPorId(Long id) throws UsuarioSQLExcepcion{
         Dao dao= null;
         DBHelper dbHelper= new DBHelper(ProveedorDeContexto.getContext());
         Usuario usuario= null;
@@ -36,6 +36,6 @@ public class UsuarioDAO {
             throw new UsuarioSQLExcepcion("Hubo un error al buscar el usuario");
         }
         return usuario;
-    }
+    }*/
 
 }

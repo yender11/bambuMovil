@@ -30,6 +30,7 @@ public class HttpRequestNoticias extends AsyncTask<Void, Void, List<Noticia>> {
 
                 restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
                 List<Noticia> noticias = new ArrayList<>();
+
                 noticias = restTemplate.getForObject(url +"all", List.class);
 
                 return noticias;
@@ -38,14 +39,14 @@ public class HttpRequestNoticias extends AsyncTask<Void, Void, List<Noticia>> {
         @Override
         protected void onPostExecute(List<Noticia> noticias) {
                 NoticiaDAO  dao = new NoticiaDAO();
-
+                /*
                 for (int i=0; i<noticias.size(); i++){
                         try {
                                 dao.insertar(noticias.get(i));
                         } catch (NoticiaSQLExcepcion noticiaSQLExcepcion) {
                                 noticiaSQLExcepcion.printStackTrace();
                         }
-                }
+                }*/
         }
 
     }

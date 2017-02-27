@@ -18,11 +18,10 @@ import java.util.List;
 public class RecyclerViewAdapterNoticias extends RecyclerView.Adapter<ViewHolderNoticias> {
 
     private List<Noticia> noticias;
-    private NoticiaDAO noticiaDAO;
     private int posicion;
 
 
-    public RecyclerViewAdapterNoticias(List<Noticia> datos)
+    public RecyclerViewAdapterNoticias(List<Noticia> noticias)
     {
         this.noticias = noticias;
     }
@@ -31,7 +30,6 @@ public class RecyclerViewAdapterNoticias extends RecyclerView.Adapter<ViewHolder
     public ViewHolderNoticias onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cv_noticias, parent, false);
         ViewHolderNoticias rvh = new ViewHolderNoticias(v);
-        noticiaDAO = new NoticiaDAO();
         return rvh;
 
     }
@@ -42,7 +40,8 @@ public class RecyclerViewAdapterNoticias extends RecyclerView.Adapter<ViewHolder
 
         holder.descripccion.setText(noticias.get(position).getDescripcion());
         holder.titulo.setText(noticias.get(position).getStatus()); // ojooo falta atributo en la db
-        holder.fecha.setText(noticias.get(position).getFecha().toString());
+        holder.fecha.setText(noticias.get(position).getFecha());
+
     }
 
     @Override
