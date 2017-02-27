@@ -8,33 +8,39 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.text.Html;
-import android.widget.Toast;
 
 /**
- * Created by alejandra on 19/02/17.
+ * Created by alejandra on 26/02/17.
  */
 
-public class DialogoContactanos extends DialogFragment {
+public class DialogoMotivoCancelacion extends DialogFragment {
+
+
 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+
+
         AlertDialog.Builder builder= new AlertDialog.Builder(getActivity());
-        builder.setView(getActivity().getLayoutInflater().inflate(R.layout.tp_contactanos, null));
-        builder.setTitle( Html.fromHtml("<font color='#277b2b'>TIPO</font>"));
+        builder.setView(getActivity().getLayoutInflater().inflate(R.layout.tp_motivo_cancelacion, null));
+        builder.setTitle( Html.fromHtml("<font color='#277b2b'>MOTIVO</font>"));
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
         builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                startActivity(new Intent(((Dialog)dialog).getContext(),Contacto.class));
+
 
             }
         });
 
-
-
-
         return builder.create();
-        //return super.onCreateDialog(savedInstanceState);
+       // return super.onCreateDialog(savedInstanceState);
     }
 }

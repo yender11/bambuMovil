@@ -8,7 +8,9 @@
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true"
 
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:longClickable="false"
+    android:onClick="onClick">
 
 
     <LinearLayout
@@ -25,10 +27,10 @@
             tools:orientation="vertical">
 
             <ImageView
-                android:layout_width="81dp"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/favicon1"
-                android:id="@+id/imageViewTipoNotificacion" />
+                android:id="@+id/imageViewTipoNotificacion"
+                android:layout_width="50dp" />
         </LinearLayout>
 
         <LinearLayout

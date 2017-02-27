@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements View.OnClickListener{
 
     private RecyclerView.LayoutManager manager;
     private RecyclerView recyclerView;
@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
         //llenado las noticias-----------------------
 
         //setContentView(R.layout.activity_notificaciones);
-        recyclerView = (RecyclerView) findViewById(R.id.listaNotificaciones);
+        recyclerView = (RecyclerView) findViewById(R.id.listaNoticias);
         List<String> titulos = new ArrayList<>();
         titulos.add(0,"Promocion de masajes faciales");
         titulos.add(1,"Nuevos Paquetes");
@@ -77,6 +77,13 @@ public class Home extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        Intent i = new Intent(this, DetalleNoticia.class);
+        startActivity(i);
     }
 }
 

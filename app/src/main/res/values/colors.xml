@@ -5,6 +5,7 @@
     <color name="colorAccent">#8BC34A</color>
     <color name="fondo_Beige">#fdfbee</color>
     <color name="fondo_verde">#d4e9a8</color>
+    <color name="colorButtonCancelar">#ed5565</color>
 
 </resources>
 

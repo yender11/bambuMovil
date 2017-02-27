@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_detalle_noticia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.si.teampoison.bambu.DetalleNoticia"
+    tools:showIn="@layout/activity_detalle_noticia">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Dia de Chicas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            style="@android:style/Widget.Holo.Light.ScrollView"
+            android:clipToPadding="true">
+
+            <TextView
+                android:text="Boquitas pintadas, uñitas de color, guiños domésticos a la estética del pasado. Hoy, la coquetería infantil se ha profesionalizado. Cremas, aceites, mascarillas, aromas y desintoxicación del cuerpo amplían el menú. Son tiempos de merecer para niñas y adolescentes, quienes saben que acompañar a mamá a un spa es también garantizarse una cita para ellas. Los sets de la belleza, antes para adultos, se abren ahora a la edad  de la inocencia "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textSize="18sp"
+                android:textAlignment="center" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="281dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/noticia"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-02-2017"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>

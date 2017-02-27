@@ -21,7 +21,9 @@ import android.widget.Toast;
 public class Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    RadioButton rb_sugerencia, rb_reclamo, rb_informacion;
+    RadioButton rb_sugerencia, rb_reclamo;
+
+
 
 
 
@@ -36,7 +38,7 @@ public class Principal extends AppCompatActivity
 
         rb_sugerencia= (RadioButton) findViewById(R.id.id_sugerencia);
         rb_reclamo = (RadioButton) findViewById(R.id.id_reclamo);
-        rb_informacion= (RadioButton) findViewById(R.id.id_informacion);
+
 
 
 
@@ -100,8 +102,10 @@ public class Principal extends AppCompatActivity
         if (id == R.id.nav_mis_citas) {
             // Handle the camera action
 
-            Intent i = new Intent(this, Calificacion.class);
+            Intent i = new Intent(this, Citas.class);
             startActivity(i);
+
+
         } else if (id == R.id.nav_mis_avances) {
             Intent i = new Intent(this,Paquetes.class);
             startActivity(i);

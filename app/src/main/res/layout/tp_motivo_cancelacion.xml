@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/tipo_contacto">
+        android:id="@+id/tipo_motivo">
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sugerencia"
-            android:id="@+id/id_sugerencia"
+            android:text="Motivos Personales"
+            android:id="@+id/id_personal"
             android:textSize="18sp" />
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reclamo"
-            android:id="@+id/id_reclamo"
+            android:text="Descontento de Servicio"
+            android:id="@+id/id_descontento"
+            android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indisposición por Horario"
+            android:id="@+id/id_horario"
             android:textSize="18sp" />
 
     </RadioGroup>
-
-
 </LinearLayout>

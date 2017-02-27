@@ -59,7 +59,7 @@
 
 
                 <Button
-                       android:text="Acceder"
+                       android:text="INICIAR SESION"
                     android:id="@+id/buttonLogin"
                        android:layout_marginTop="50dp"
                        android:layout_width="361dp"
