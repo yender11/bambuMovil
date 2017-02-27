@@ -48,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="912be69da310d7315a06bcd8365b8fc14176ef47">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/instant-run_89a906b293fc1bddb0368a75f9279e5e27f37e1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -57,12 +66,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_e733b127be4f89b10522d3c833aefc593770a31d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_05072f66e3b94515328e27ddb44cc34a155b2072.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/Android- VersionULTIMA/bambu/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="95f5a93bbde97a3c1fcd76637cdaa31508e2c4f1">
         <dex dex="/home/alejandra/Android- VersionULTIMA/bambu/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_cbb95580b30286e00b8aaa5f4dc6c478f11c5d37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_2b8b6ea022299612f6389c0003d38cae7649e6c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_a4a32c1751fa23307a6b40f0cd30bb45b80bc69d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,6 +129,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_80ea141a3db70879d95b72d7fd8679eb8a2aee72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_d1a6ce82a85701e3813608b56c66ff398c07aaa1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_24d30bde7cac5d71cfce01e2bb87921e46baaa69.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="false"
         optimize="true"
@@ -99,6 +171,15 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_9bdbbd1ad380bae0b23d69ad37371c0487349bf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67e1b89f50c5808c1ced2557a8c20792a9bc878d">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_e4e237dbe16c04ba04cdb6d7560fb9bb6e1b1fd9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,12 +201,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_a0360bdfe97f82893a040f6a26f87c75a869b627.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_1661d91cfb83d54dd358608f659532fa3022fdc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_eceb78509b9a9f46bf1b5ed5d9f3d3cdf95c6c2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_e6a1f091bf176d8581ed46989b1d6b2a1f3edb4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_6574c3a9441f05e8664bec03963f4f47931a5e09.jar" />
     </item>
     <item
         is-multidex="false"
@@ -246,6 +363,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_63bf01a17e396e710d1461a362f094ae891d8843.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/Android- VersionULTIMA/bambu/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -282,12 +408,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.2.1_110b1043a1f1ea9b59058c9a01f3596f8a11e6b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
         <dex dex="/home/alejandra/AndroidStudioProjects/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_bbf4fdbfc5f49781b0a001fb5fa6bb8178b44dd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_6f0abe22ed712b70a5f4468d55bdd78b5c823d2b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -354,6 +498,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_b7bef13f70dddc1398215f94d0c7556bd93074bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/alejandra/Android- VersionULTIMA/bambu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -396,6 +549,15 @@
         revision="25.0.2"
         sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
         <dex dex="/home/alejandra/Android- VersionULTIMA/bambu/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.2.1_19e0156c3e190fb7b1dbc2b463d3a321cf826c66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/home/alejandra/Documentos/Calificacion y redondito/bambu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_9fba74d53f1117604abe826bd8f814bf43dd39b8.jar" />
     </item>
     <item
         is-multidex="false"
