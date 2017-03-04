@@ -9,7 +9,6 @@ import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
-import com.si.teampoison.bambu.base.ProveedorDeContexto;
 import com.si.teampoison.bambu.sql.modelo.Noticia;
 import com.si.teampoison.bambu.sql.modelo.Rol;
 import com.si.teampoison.bambu.sql.modelo.Usuario;
@@ -28,10 +27,8 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     private static DBHelper mDBHelper;
 
     //Aqui van los atributos relacionados a las tablas de base de datos que se desean gestionar
-    private Dao<Rol,Integer> rolIntegerDao;
-    private Dao<Usuario, Integer> usuarioIntegerDao;
-    private Dao<Noticia, String> noticiaStringDao;
-    private RuntimeExceptionDao<Noticia, String> prueba = null;
+
+    private RuntimeExceptionDao<Noticia, String> noticia = null;
 
     public DBHelper(Context context) {
          super(context, NOMBRE_BASE_DE_DATOS, null, VERSION_BASE_DE_DATOS);
@@ -53,19 +50,6 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
         onCreate(database,connectionSource);
     }
 
-    public Dao<Rol, Integer> getRolIntegerDao() throws SQLException{
-        if(rolIntegerDao==null){
-            rolIntegerDao= getDao(Rol.class);
-        }
-        return rolIntegerDao;
-    }
-
-    public Dao<Usuario, Integer> getUsuarioIntegerDao() throws SQLException{
-        if(usuarioIntegerDao==null){
-            usuarioIntegerDao= getDao(Usuario.class);
-        }
-        return usuarioIntegerDao;
-    }
 
     public DBHelper getHelper(Context context)  {
         if (mDBHelper == null) {
@@ -81,18 +65,12 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
         }
     }
 
-     public Dao<Noticia, String> getNoticiaStringDao()throws SQLException {
-
-            noticiaStringDao= getDao(Noticia.class);
-
-        return noticiaStringDao;
-    }
 
     public RuntimeExceptionDao<Noticia, String> getRuntimeExceptionDao(){
-        if(prueba==null){
-            prueba = getRuntimeExceptionDao(Noticia.class);
+        if(noticia==null){
+            noticia = getRuntimeExceptionDao(Noticia.class);
         }
-        return prueba;
+        return noticia;
     }
 
     @Override

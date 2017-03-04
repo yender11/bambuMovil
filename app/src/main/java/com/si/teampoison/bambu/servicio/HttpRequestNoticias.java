@@ -4,9 +4,11 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.j256.ormlite.android.apptools.OpenHelperManager;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.si.teampoison.bambu.R;
 import com.si.teampoison.bambu.excepciones.NoticiaSQLExcepcion;
-import com.si.teampoison.bambu.sql.dao.NoticiaDAO;
+import com.si.teampoison.bambu.sql.conexion.DBHelper;
 import com.si.teampoison.bambu.sql.modelo.Noticia;
 import com.si.teampoison.bambu.sql.modelo.Prueba;
 
@@ -21,6 +23,8 @@ import java.util.List;
  */
 
 public class HttpRequestNoticias extends AsyncTask<Void, Void, List<Noticia>> {
+
+
 
         @Override
         public List<Noticia> doInBackground(Void... params) {
@@ -38,11 +42,11 @@ public class HttpRequestNoticias extends AsyncTask<Void, Void, List<Noticia>> {
         }
         @Override
         protected void onPostExecute(List<Noticia> noticias) {
-                NoticiaDAO  dao = new NoticiaDAO();
+
                 /*
                 for (int i=0; i<noticias.size(); i++){
                         try {
-                                dao.insertar(noticias.get(i));
+                                (noticias.get(i));
                         } catch (NoticiaSQLExcepcion noticiaSQLExcepcion) {
                                 noticiaSQLExcepcion.printStackTrace();
                         }

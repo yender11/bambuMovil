@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.si.teampoison.bambu.R;
-import com.si.teampoison.bambu.sql.dao.NoticiaDAO;
 import com.si.teampoison.bambu.sql.modelo.Noticia;
 
 import java.util.List;
