@@ -2,14 +2,13 @@ package com.si.teampoison.bambu.sql.conexion;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.app.Application;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
-import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 import com.si.teampoison.bambu.sql.modelo.Noticia;
+import com.si.teampoison.bambu.sql.modelo.Rates;
 import com.si.teampoison.bambu.sql.modelo.Rol;
 import com.si.teampoison.bambu.sql.modelo.Usuario;
 
@@ -29,6 +28,7 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     //Aqui van los atributos relacionados a las tablas de base de datos que se desean gestionar
 
     private RuntimeExceptionDao<Noticia, String> noticia = null;
+    private RuntimeExceptionDao<Rates, String> rates = null;
 
     public DBHelper(Context context) {
          super(context, NOMBRE_BASE_DE_DATOS, null, VERSION_BASE_DE_DATOS);
@@ -40,6 +40,8 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
             TableUtils.createTable(connectionSource , Usuario.class);
             TableUtils.createTable(connectionSource, Rol.class);
             TableUtils.createTable(connectionSource, Noticia.class);
+            TableUtils.createTable(connectionSource, Rates.class);
+
         } catch (SQLException e) {
             throw new RuntimeException("Ha ocurrido un error en la creacion de la base de datos");
         }
@@ -66,12 +68,21 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     }
 
 
-    public RuntimeExceptionDao<Noticia, String> getRuntimeExceptionDao(){
+    public RuntimeExceptionDao<Noticia, String> getRuntimeExceptionNoticiasDao(){
         if(noticia==null){
             noticia = getRuntimeExceptionDao(Noticia.class);
         }
         return noticia;
     }
+
+
+    public RuntimeExceptionDao<Rates, String> getRuntimeExceptionRatesDao(){
+        if(rates==null){
+            rates = getRuntimeExceptionDao(Rates.class);
+        }
+        return rates;
+    }
+
 
     @Override
     public void close(){
